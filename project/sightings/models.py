@@ -1,0 +1,27 @@
+from django.db import models
+from django.utils import timezone
+
+class Sighting(models.Model):
+    Latitude = models.DecimalField(max_digits=50,decimal_places=20)
+    Longitude = models.DecimalField(max_digits=50,decimal_places=20)
+    Unique_Squirrel_ID = models.CharField(max_length=50, null=True)
+    Hectare = models.CharField(max_length=50, null=True)
+    Shift = models.CharField(max_length=50, null=True)
+    Date = models.DateField()
+    Age = models.CharField(max_length=50, null=True, blank=True)
+    Primary_Fur_Color = models.CharField(max_length=50, null=True, blank=True)
+    Location = models.CharField(max_length=50, null=True, blank=True)
+    Specific_Location=models.CharField(max_length=50, null=True, blank=True)
+    Running = models.BooleanField()
+    Chasing = models.BooleanField()
+    Climbing = models.BooleanField()
+    Eating = models.BooleanField()
+    Foraging = models.BooleanField()
+    Other_Activities = models.CharField(max_length=50, null=True, blank=True)
+    Kuks = models.BooleanField()
+    Quaas = models.BooleanField()
+    Moans = models.BooleanField()
+    Tail_flags = models.BooleanField()
+    Tail_twiches = models.BooleanField()
+    Indifferent = models.BooleanField()
+    Runs_from = models.BooleanField()
