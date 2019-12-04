@@ -1,10 +1,18 @@
+<<<<<<< HEAD
+#!/home/yz3680/insta/env/bin/python3
+=======
 #!/home/sq2221/squirrel/env/bin/python3
+>>>>>>> 639b72a720b605bef703896f841d05d431183fd0
 
 # -*- coding: utf-8 -*-
 import re
 import sys
 
+<<<<<<< HEAD
+from pip import main
+=======
 from pip._internal.main import main
+>>>>>>> 639b72a720b605bef703896f841d05d431183fd0
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
