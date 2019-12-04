@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/home/yz3680/insta/env/bin/python3
 
 # -*- coding: utf-8 -*-
@@ -8,4 +9,13 @@ from sqlparse.__main__ import main
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+=======
+#!/home/sq2221/squirrel/env/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from sqlparse.__main__ import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+>>>>>>> 639b72a720b605bef703896f841d05d431183fd0
     sys.exit(main())
